@@ -31,7 +31,7 @@ My experience with using SQL often occurs in chunks, when setting up a database 
    1. [String](#String)
    2. [Integer](#Integer)
    3. [Floating Point](#Floating-Point)
-   4. [Fixed Point](#Fixed Point)
+   4. [Fixed Point](#Fixed-Point)
    5. [JSON](#JSON)
    6. [Time](#Time)
 5. [Relational Databases](#Relational-Databases)
