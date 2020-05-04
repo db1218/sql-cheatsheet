@@ -58,9 +58,9 @@ DROP DATABASE dbname;
 
 ```mysql
 CREATE TABLE TableName (
-		colName1 type,
-  	colName2 type,
-  	colName3 type
+    colName1 type,
+    colName2 type,
+    colName3 type
 );
 ```
 
@@ -166,7 +166,7 @@ VARCHAR(length)
 
 ### [Integer](https://dev.mysql.com/doc/refman/5.7/en/integer-types.html)
 
-Just a normal integer up to 
+Just a normal integer
 
 ```mysql
 INT
@@ -231,8 +231,8 @@ Unique identifier for the record. There cannot be another record with this value
 ```mysql
 CREATE TABLE Users (
     user_id INT NOT NULL AUTO_INCREMENT,
-  	username VARCHAR(15),
-  	age INT,
+    username VARCHAR(15),
+    age INT,
     PRIMARY KEY (user_id)
 ); 
 ```
@@ -244,10 +244,10 @@ Links two tables together. A `FOREIGN KEY` in one table must be a `Primary Key` 
 ```mysql
 CREATE TABLE Messages (
     message_id INT NOT NULL AUTO_INCREMENT,
-  	user_id INT NOT NULL,
-  	text VARCHAR(255),
-  	time_send TIMESTAMP,
+    user_id INT NOT NULL,
+    text VARCHAR(255),
+    time_send TIMESTAMP,
     PRIMARY KEY (message_id),
-  	FOREIGN KEY (user_id) REFERENCES Users(user_id)
+    FOREIGN KEY (user_id) REFERENCES Users(user_id)
 ); 
 ```
